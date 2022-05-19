@@ -1,0 +1,433 @@
+2022-05-19 16:09:11.735 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-19 16:09:13.289 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-19 16:09:13.290 +05:30 [INF] Hosting environment: Development
+2022-05-19 16:09:13.290 +05:30 [INF] Content root path: C:\Users\User\source\repos\Accrediation\TweetMe
+2022-05-19 16:09:13.410 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/swagger/index.html - -
+2022-05-19 16:09:13.868 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/swagger/index.html - - - 200 - text/html;charset=utf-8 454.1395ms
+2022-05-19 16:09:14.407 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/swagger/v1/swagger.json - -
+2022-05-19 16:09:14.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.5792ms
+2022-05-19 16:09:18.411 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/logout - -
+2022-05-19 16:09:18.416 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:18.418 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/logout - - - 204 - - 7.5831ms
+2022-05-19 16:09:18.422 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:38201/api/v1.0/user/logout application/json 149
+2022-05-19 16:09:18.422 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:18.883 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:09:18.889 +05:30 [INF] Authorization was successful.
+2022-05-19 16:09:18.891 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.UserController.Logout (TweetMe)'
+2022-05-19 16:09:18.926 +05:30 [INF] Route matched with {action = "logout", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout(TweetMe.Models.User) on controller TweetMe.Controllers.UserController (TweetMe).
+2022-05-19 16:09:19.552 +05:30 [INF] Executing action method TweetMe.Controllers.UserController.Logout (TweetMe) - Validation state: "Valid"
+2022-05-19 16:09:19.836 +05:30 [INF] Executed action method TweetMe.Controllers.UserController.Logout (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkResult in 276.2478ms.
+2022-05-19 16:09:19.845 +05:30 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-19 16:09:19.850 +05:30 [INF] Executed action TweetMe.Controllers.UserController.Logout (TweetMe) in 919.7156ms
+2022-05-19 16:09:19.850 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.UserController.Logout (TweetMe)'
+2022-05-19 16:09:19.869 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:38201/api/v1.0/user/logout application/json 149 - 200 - - 1446.8522ms
+2022-05-19 16:09:28.046 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/login - -
+2022-05-19 16:09:28.047 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:28.048 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/login - - - 204 - - 1.5320ms
+2022-05-19 16:09:28.052 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:38201/api/v1.0/user/login application/json 149
+2022-05-19 16:09:28.053 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:28.056 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.UserController.Login (TweetMe)'
+2022-05-19 16:09:28.058 +05:30 [INF] Route matched with {action = "login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TweetMe.Models.User) on controller TweetMe.Controllers.UserController (TweetMe).
+2022-05-19 16:09:28.089 +05:30 [INF] Executing action method TweetMe.Controllers.UserController.Login (TweetMe) - Validation state: "Valid"
+2022-05-19 16:09:28.323 +05:30 [INF] Executed action method TweetMe.Controllers.UserController.Login (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 233.2833ms.
+2022-05-19 16:09:28.347 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[TweetMe.Models.User, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-05-19 16:09:28.382 +05:30 [INF] Executed action TweetMe.Controllers.UserController.Login (TweetMe) in 323.905ms
+2022-05-19 16:09:28.383 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.UserController.Login (TweetMe)'
+2022-05-19 16:09:28.391 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:38201/api/v1.0/user/login application/json 149 - 200 - application/json;+charset=utf-8 338.9017ms
+2022-05-19 16:09:28.435 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - -
+2022-05-19 16:09:28.435 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:28.435 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - - - 204 - - 0.5362ms
+2022-05-19 16:09:28.440 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json -
+2022-05-19 16:09:28.440 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:28.443 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:09:28.444 +05:30 [INF] Authorization was successful.
+2022-05-19 16:09:28.444 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:09:28.454 +05:30 [INF] Route matched with {action = "user", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetByUsername(System.String) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:09:28.493 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe) - Validation state: "Valid"
+2022-05-19 16:09:28.551 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 57.1825ms.
+2022-05-19 16:09:28.553 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:09:28.560 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetByUsername (TweetMe) in 105.5804ms
+2022-05-19 16:09:28.560 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:09:28.565 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json - - 200 - application/json;+charset=utf-8 125.1332ms
+2022-05-19 16:09:40.882 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/all - -
+2022-05-19 16:09:40.882 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:40.883 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/all - - - 204 - - 0.5524ms
+2022-05-19 16:09:40.888 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/user/all application/json -
+2022-05-19 16:09:40.888 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:40.889 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:09:40.889 +05:30 [INF] Authorization was successful.
+2022-05-19 16:09:40.889 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.UserController.GetAll (TweetMe)'
+2022-05-19 16:09:40.892 +05:30 [INF] Route matched with {action = "all", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.User]]] GetAll() on controller TweetMe.Controllers.UserController (TweetMe).
+2022-05-19 16:09:40.974 +05:30 [INF] Executing action method TweetMe.Controllers.UserController.GetAll (TweetMe) - Validation state: "Valid"
+2022-05-19 16:09:41.003 +05:30 [INF] Executed action method TweetMe.Controllers.UserController.GetAll (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 29.3332ms.
+2022-05-19 16:09:41.004 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.User, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:09:41.006 +05:30 [INF] Executed action TweetMe.Controllers.UserController.GetAll (TweetMe) in 113.9124ms
+2022-05-19 16:09:41.006 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.UserController.GetAll (TweetMe)'
+2022-05-19 16:09:41.058 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/user/all application/json - - 200 - application/json;+charset=utf-8 169.8314ms
+2022-05-19 16:09:42.353 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/all - -
+2022-05-19 16:09:42.353 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:42.354 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/all - - - 204 - - 0.4627ms
+2022-05-19 16:09:42.361 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json -
+2022-05-19 16:09:42.361 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:09:42.365 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:09:42.365 +05:30 [INF] Authorization was successful.
+2022-05-19 16:09:42.365 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:09:42.368 +05:30 [INF] Route matched with {action = "all", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetAll() on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:09:42.406 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetAll (TweetMe) - Validation state: "Valid"
+2022-05-19 16:09:42.407 +05:30 [INF] GetAll API called
+2022-05-19 16:09:42.414 +05:30 [INF] Successful GetAll API response
+2022-05-19 16:09:42.414 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetAll (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.204ms.
+2022-05-19 16:09:42.415 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:09:42.423 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetAll (TweetMe) in 55.2513ms
+2022-05-19 16:09:42.423 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:09:42.456 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json - - 200 - application/json;+charset=utf-8 94.8015ms
+2022-05-19 16:10:30.375 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - -
+2022-05-19 16:10:30.375 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:10:30.376 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - - - 204 - - 0.6163ms
+2022-05-19 16:10:30.406 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json -
+2022-05-19 16:10:30.406 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:10:30.407 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:10:30.408 +05:30 [INF] Authorization was successful.
+2022-05-19 16:10:30.408 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:10:30.408 +05:30 [INF] Route matched with {action = "user", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetByUsername(System.String) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:10:30.472 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe) - Validation state: "Valid"
+2022-05-19 16:10:30.483 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 10.4632ms.
+2022-05-19 16:10:30.483 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:10:30.484 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetByUsername (TweetMe) in 76.2429ms
+2022-05-19 16:10:30.484 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:10:30.485 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json - - 200 - application/json;+charset=utf-8 79.6374ms
+2022-05-19 16:10:31.955 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/all - -
+2022-05-19 16:10:31.955 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:10:31.958 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/all - - - 204 - - 3.2217ms
+2022-05-19 16:10:31.963 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json -
+2022-05-19 16:10:31.963 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:10:31.964 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:10:31.964 +05:30 [INF] Authorization was successful.
+2022-05-19 16:10:31.964 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:10:31.964 +05:30 [INF] Route matched with {action = "all", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetAll() on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:10:32.001 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetAll (TweetMe) - Validation state: "Valid"
+2022-05-19 16:10:32.001 +05:30 [INF] GetAll API called
+2022-05-19 16:10:32.002 +05:30 [INF] Successful GetAll API response
+2022-05-19 16:10:32.003 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetAll (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.3193ms.
+2022-05-19 16:10:32.003 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:10:32.003 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetAll (TweetMe) in 39.2157ms
+2022-05-19 16:10:32.003 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:10:32.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json - - 200 - application/json;+charset=utf-8 40.6617ms
+2022-05-19 16:50:39.436 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-05-19 16:50:39.965 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-19 16:50:39.966 +05:30 [INF] Hosting environment: Development
+2022-05-19 16:50:39.966 +05:30 [INF] Content root path: C:\Users\User\source\repos\Accrediation\TweetMe
+2022-05-19 16:50:40.022 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/swagger/index.html - -
+2022-05-19 16:50:40.206 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/swagger/index.html - - - 200 - text/html;charset=utf-8 187.1241ms
+2022-05-19 16:50:40.555 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/swagger/v1/swagger.json - -
+2022-05-19 16:50:40.702 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 147.0582ms
+2022-05-19 16:50:46.403 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/logout - -
+2022-05-19 16:50:46.409 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:50:46.411 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/logout - - - 204 - - 7.5751ms
+2022-05-19 16:50:46.413 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:38201/api/v1.0/user/logout application/json 149
+2022-05-19 16:50:46.413 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:50:46.847 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:50:46.853 +05:30 [INF] Authorization was successful.
+2022-05-19 16:50:46.855 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.UserController.Logout (TweetMe)'
+2022-05-19 16:50:46.894 +05:30 [INF] Route matched with {action = "logout", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout(TweetMe.Models.User) on controller TweetMe.Controllers.UserController (TweetMe).
+2022-05-19 16:50:47.786 +05:30 [INF] Executing action method TweetMe.Controllers.UserController.Logout (TweetMe) - Validation state: "Valid"
+2022-05-19 16:50:47.789 +05:30 [INF] Logout API called
+2022-05-19 16:50:48.072 +05:30 [INF] User successfully logged out
+2022-05-19 16:50:48.079 +05:30 [INF] Executed action method TweetMe.Controllers.UserController.Logout (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkResult in 283.9587ms.
+2022-05-19 16:50:48.085 +05:30 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-19 16:50:48.092 +05:30 [INF] Executed action TweetMe.Controllers.UserController.Logout (TweetMe) in 1190.9724ms
+2022-05-19 16:50:48.092 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.UserController.Logout (TweetMe)'
+2022-05-19 16:50:48.096 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:38201/api/v1.0/user/logout application/json 149 - 200 - - 1682.5460ms
+2022-05-19 16:50:54.238 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/login - -
+2022-05-19 16:50:54.238 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:50:54.239 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/login - - - 204 - - 0.9452ms
+2022-05-19 16:50:54.259 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:38201/api/v1.0/user/login application/json 148
+2022-05-19 16:50:54.259 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:50:54.261 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.UserController.Login (TweetMe)'
+2022-05-19 16:50:54.263 +05:30 [INF] Route matched with {action = "login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TweetMe.Models.User) on controller TweetMe.Controllers.UserController (TweetMe).
+2022-05-19 16:50:54.333 +05:30 [INF] Executing action method TweetMe.Controllers.UserController.Login (TweetMe) - Validation state: "Valid"
+2022-05-19 16:50:54.334 +05:30 [INF] Login API called
+2022-05-19 16:50:54.486 +05:30 [INF] Login API: user not found
+2022-05-19 16:50:54.490 +05:30 [INF] Executed action method TweetMe.Controllers.UserController.Login (TweetMe), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 156.5655ms.
+2022-05-19 16:50:54.499 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-05-19 16:50:54.511 +05:30 [INF] Executed action TweetMe.Controllers.UserController.Login (TweetMe) in 247.4852ms
+2022-05-19 16:50:54.511 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.UserController.Login (TweetMe)'
+2022-05-19 16:50:54.541 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:38201/api/v1.0/user/login application/json 148 - 404 - application/problem+json;+charset=utf-8 281.7988ms
+2022-05-19 16:51:01.517 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/login - -
+2022-05-19 16:51:01.517 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:01.518 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/login - - - 204 - - 0.8882ms
+2022-05-19 16:51:01.532 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:38201/api/v1.0/user/login application/json 149
+2022-05-19 16:51:01.532 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:01.535 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.UserController.Login (TweetMe)'
+2022-05-19 16:51:01.535 +05:30 [INF] Route matched with {action = "login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TweetMe.Models.User) on controller TweetMe.Controllers.UserController (TweetMe).
+2022-05-19 16:51:01.575 +05:30 [INF] Executing action method TweetMe.Controllers.UserController.Login (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:01.575 +05:30 [INF] Login API called
+2022-05-19 16:51:01.705 +05:30 [INF] Login API: user not found successful
+2022-05-19 16:51:01.705 +05:30 [INF] Executed action method TweetMe.Controllers.UserController.Login (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 130.5789ms.
+2022-05-19 16:51:01.705 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task`1[[TweetMe.Models.User, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-05-19 16:51:01.740 +05:30 [INF] Executed action TweetMe.Controllers.UserController.Login (TweetMe) in 204.9006ms
+2022-05-19 16:51:01.740 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.UserController.Login (TweetMe)'
+2022-05-19 16:51:01.741 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:38201/api/v1.0/user/login application/json 149 - 200 - application/json;+charset=utf-8 208.7802ms
+2022-05-19 16:51:01.797 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - -
+2022-05-19 16:51:01.798 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:01.799 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - - - 204 - - 1.0270ms
+2022-05-19 16:51:01.811 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json -
+2022-05-19 16:51:01.811 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:01.818 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:01.818 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:01.818 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:01.832 +05:30 [INF] Route matched with {action = "user", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetByUsername(System.String) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:01.870 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:01.872 +05:30 [INF] GetByUsername API called
+2022-05-19 16:51:01.907 +05:30 [INF] Successfully returned tweets for given user njhawar01
+2022-05-19 16:51:01.908 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 37.9524ms.
+2022-05-19 16:51:01.910 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:01.917 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetByUsername (TweetMe) in 85.653ms
+2022-05-19 16:51:01.918 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:01.921 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json - - 200 - application/json;+charset=utf-8 109.8355ms
+2022-05-19 16:51:06.020 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/all - -
+2022-05-19 16:51:06.020 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:06.020 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/all - - - 204 - - 0.4285ms
+2022-05-19 16:51:06.035 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json -
+2022-05-19 16:51:06.035 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:06.036 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:06.036 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:06.036 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:51:06.039 +05:30 [INF] Route matched with {action = "all", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetAll() on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:06.068 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetAll (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:06.069 +05:30 [INF] GetAll tweet API called
+2022-05-19 16:51:06.076 +05:30 [INF] Successfully returned all tweets
+2022-05-19 16:51:06.077 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetAll (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.8149ms.
+2022-05-19 16:51:06.077 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:06.077 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetAll (TweetMe) in 37.9827ms
+2022-05-19 16:51:06.077 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:51:06.077 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json - - 200 - application/json;+charset=utf-8 42.3927ms
+2022-05-19 16:51:07.281 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/all - -
+2022-05-19 16:51:07.281 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:07.282 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/all - - - 204 - - 1.5166ms
+2022-05-19 16:51:07.285 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/user/all application/json -
+2022-05-19 16:51:07.285 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:07.286 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:07.286 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:07.286 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.UserController.GetAll (TweetMe)'
+2022-05-19 16:51:07.288 +05:30 [INF] Route matched with {action = "all", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.User]]] GetAll() on controller TweetMe.Controllers.UserController (TweetMe).
+2022-05-19 16:51:07.314 +05:30 [INF] Executing action method TweetMe.Controllers.UserController.GetAll (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:07.315 +05:30 [INF] GetAll user API called
+2022-05-19 16:51:07.317 +05:30 [INF] Successfully returned all users
+2022-05-19 16:51:07.317 +05:30 [INF] Executed action method TweetMe.Controllers.UserController.GetAll (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.0592ms.
+2022-05-19 16:51:07.318 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.User, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:07.318 +05:30 [INF] Executed action TweetMe.Controllers.UserController.GetAll (TweetMe) in 30.0482ms
+2022-05-19 16:51:07.318 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.UserController.GetAll (TweetMe)'
+2022-05-19 16:51:07.319 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/user/all application/json - - 200 - application/json;+charset=utf-8 33.9111ms
+2022-05-19 16:51:08.209 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/search/njhawar01 - -
+2022-05-19 16:51:08.209 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:08.210 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/search/njhawar01 - - - 204 - - 0.4368ms
+2022-05-19 16:51:08.216 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/user/search/njhawar01 application/json -
+2022-05-19 16:51:08.216 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:08.216 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:08.216 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:08.217 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.UserController.GetByUsername (TweetMe)'
+2022-05-19 16:51:08.220 +05:30 [INF] Route matched with {action = "search", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TweetMe.Models.User]] GetByUsername(System.String) on controller TweetMe.Controllers.UserController (TweetMe).
+2022-05-19 16:51:08.254 +05:30 [INF] Executing action method TweetMe.Controllers.UserController.GetByUsername (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:08.255 +05:30 [INF] GetByUsername API called
+2022-05-19 16:51:08.256 +05:30 [INF] Successfully returned details for the user njhawar01
+2022-05-19 16:51:08.257 +05:30 [INF] Executed action method TweetMe.Controllers.UserController.GetByUsername (TweetMe), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.0581ms.
+2022-05-19 16:51:08.257 +05:30 [INF] Executing ObjectResult, writing value of type 'TweetMe.Models.User'.
+2022-05-19 16:51:08.257 +05:30 [INF] Executed action TweetMe.Controllers.UserController.GetByUsername (TweetMe) in 37.2897ms
+2022-05-19 16:51:08.257 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.UserController.GetByUsername (TweetMe)'
+2022-05-19 16:51:08.258 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/user/search/njhawar01 application/json - - 200 - application/json;+charset=utf-8 41.6644ms
+2022-05-19 16:51:08.264 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - -
+2022-05-19 16:51:08.264 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:08.265 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - - - 204 - - 0.3346ms
+2022-05-19 16:51:08.266 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json -
+2022-05-19 16:51:08.266 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:08.267 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:08.267 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:08.267 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:08.267 +05:30 [INF] Route matched with {action = "user", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetByUsername(System.String) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:08.305 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:08.306 +05:30 [INF] GetByUsername API called
+2022-05-19 16:51:08.307 +05:30 [INF] Successfully returned tweets for given user njhawar01
+2022-05-19 16:51:08.307 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.7356ms.
+2022-05-19 16:51:08.307 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:08.308 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetByUsername (TweetMe) in 40.3913ms
+2022-05-19 16:51:08.308 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:08.308 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json - - 200 - application/json;+charset=utf-8 42.4965ms
+2022-05-19 16:51:10.070 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json -
+2022-05-19 16:51:10.070 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:10.071 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:10.076 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:10.076 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:51:10.076 +05:30 [INF] Route matched with {action = "all", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetAll() on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:10.100 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetAll (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:10.100 +05:30 [INF] GetAll tweet API called
+2022-05-19 16:51:10.107 +05:30 [INF] Successfully returned all tweets
+2022-05-19 16:51:10.107 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetAll (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.6887ms.
+2022-05-19 16:51:10.107 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:10.108 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetAll (TweetMe) in 31.4813ms
+2022-05-19 16:51:10.108 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:51:10.108 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json - - 200 - application/json;+charset=utf-8 38.5553ms
+2022-05-19 16:51:16.726 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - -
+2022-05-19 16:51:16.726 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:16.727 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - - - 204 - - 0.5873ms
+2022-05-19 16:51:16.733 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json -
+2022-05-19 16:51:16.733 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:16.733 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:16.733 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:16.733 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:16.733 +05:30 [INF] Route matched with {action = "user", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetByUsername(System.String) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:16.763 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:16.764 +05:30 [INF] GetByUsername API called
+2022-05-19 16:51:16.765 +05:30 [INF] Successfully returned tweets for given user njhawar01
+2022-05-19 16:51:16.765 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1.5466ms.
+2022-05-19 16:51:16.765 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:16.766 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetByUsername (TweetMe) in 32.7361ms
+2022-05-19 16:51:16.766 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:16.767 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json - - 200 - application/json;+charset=utf-8 34.0343ms
+2022-05-19 16:51:22.015 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/njhawar01/update - -
+2022-05-19 16:51:22.016 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:22.016 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/njhawar01/update - - - 204 - - 1.0380ms
+2022-05-19 16:51:22.019 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:38201/api/v1.0/tweet/njhawar01/update application/json 176
+2022-05-19 16:51:22.019 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:22.019 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:22.019 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:22.019 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.UpdateTweet (TweetMe)'
+2022-05-19 16:51:22.024 +05:30 [INF] Route matched with {action = "{Login_Id}/update", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTweet(TweetMe.Models.Tweet) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:22.062 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.UpdateTweet (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:22.063 +05:30 [INF] UpdateTweet API called
+2022-05-19 16:51:22.107 +05:30 [INF] Successfully updated the tweet
+2022-05-19 16:51:22.108 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.UpdateTweet (TweetMe), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 46.0999ms.
+2022-05-19 16:51:22.108 +05:30 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-05-19 16:51:22.108 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.UpdateTweet (TweetMe) in 84.5135ms
+2022-05-19 16:51:22.108 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.UpdateTweet (TweetMe)'
+2022-05-19 16:51:22.109 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:38201/api/v1.0/tweet/njhawar01/update application/json 176 - 204 - - 90.0223ms
+2022-05-19 16:51:28.566 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/njhawar01/delete/62710851a5058340cddc277b - -
+2022-05-19 16:51:28.566 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:28.566 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/njhawar01/delete/62710851a5058340cddc277b - - - 204 - - 0.3853ms
+2022-05-19 16:51:28.570 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:38201/api/v1.0/tweet/njhawar01/delete/62710851a5058340cddc277b application/json -
+2022-05-19 16:51:28.570 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:28.571 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:28.571 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:28.571 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.DeleteTweet (TweetMe)'
+2022-05-19 16:51:28.575 +05:30 [INF] Route matched with {action = "{Login_Id}/delete", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteTweet(System.String) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:28.608 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.DeleteTweet (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:28.610 +05:30 [INF] DeleteTweet API called
+2022-05-19 16:51:28.631 +05:30 [INF] Successfully deleted the tweet
+2022-05-19 16:51:28.631 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.DeleteTweet (TweetMe), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 22.0865ms.
+2022-05-19 16:51:28.631 +05:30 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-05-19 16:51:28.631 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.DeleteTweet (TweetMe) in 55.3217ms
+2022-05-19 16:51:28.631 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.DeleteTweet (TweetMe)'
+2022-05-19 16:51:28.631 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:38201/api/v1.0/tweet/njhawar01/delete/62710851a5058340cddc277b application/json - - 204 - - 61.5674ms
+2022-05-19 16:51:28.635 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - -
+2022-05-19 16:51:28.635 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:28.635 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/user/njhawar01 - - - 204 - - 0.3117ms
+2022-05-19 16:51:28.636 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json -
+2022-05-19 16:51:28.637 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:28.637 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:28.637 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:28.637 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:28.637 +05:30 [INF] Route matched with {action = "user", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetByUsername(System.String) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:28.671 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:28.671 +05:30 [INF] GetByUsername API called
+2022-05-19 16:51:28.676 +05:30 [INF] Successfully returned tweets for given user njhawar01
+2022-05-19 16:51:28.677 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.8941ms.
+2022-05-19 16:51:28.678 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:28.678 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetByUsername (TweetMe) in 40.8955ms
+2022-05-19 16:51:28.678 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:28.678 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json - - 200 - application/json;+charset=utf-8 41.7717ms
+2022-05-19 16:51:30.019 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/njhawar01/add - -
+2022-05-19 16:51:30.019 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:30.019 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/njhawar01/add - - - 204 - - 0.3803ms
+2022-05-19 16:51:30.021 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:38201/api/v1.0/tweet/njhawar01/add application/json 141
+2022-05-19 16:51:30.021 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:30.022 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:30.022 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:30.022 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.CreateTweet (TweetMe)'
+2022-05-19 16:51:30.035 +05:30 [INF] Route matched with {action = "{Login_Id}/add", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateTweet(System.String, TweetMe.Models.Tweet) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:30.062 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.CreateTweet (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:30.063 +05:30 [INF] CreateTweet API called
+2022-05-19 16:51:30.127 +05:30 [INF] Successfully created new tweet
+2022-05-19 16:51:30.128 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.CreateTweet (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 64.9946ms.
+2022-05-19 16:51:30.128 +05:30 [INF] Executing OkObjectResult, writing value of type 'TweetMe.Models.Tweet'.
+2022-05-19 16:51:30.128 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.CreateTweet (TweetMe) in 92.7279ms
+2022-05-19 16:51:30.128 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.CreateTweet (TweetMe)'
+2022-05-19 16:51:30.128 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:38201/api/v1.0/tweet/njhawar01/add application/json 141 - 200 - application/json;+charset=utf-8 107.0248ms
+2022-05-19 16:51:30.132 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json -
+2022-05-19 16:51:30.132 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:30.133 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:30.133 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:30.133 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:30.133 +05:30 [INF] Route matched with {action = "user", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetByUsername(System.String) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:30.159 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:30.159 +05:30 [INF] GetByUsername API called
+2022-05-19 16:51:30.200 +05:30 [INF] Successfully returned tweets for given user njhawar01
+2022-05-19 16:51:30.200 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetByUsername (TweetMe), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 40.9851ms.
+2022-05-19 16:51:30.201 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:30.201 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetByUsername (TweetMe) in 68.2441ms
+2022-05-19 16:51:30.201 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetByUsername (TweetMe)'
+2022-05-19 16:51:30.201 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/user/njhawar01 application/json - - 200 - application/json;+charset=utf-8 69.2450ms
+2022-05-19 16:51:33.069 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/all - -
+2022-05-19 16:51:33.070 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:33.071 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/all - - - 204 - - 1.6034ms
+2022-05-19 16:51:33.080 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json -
+2022-05-19 16:51:33.080 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:33.080 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:33.080 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:33.080 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:51:33.080 +05:30 [INF] Route matched with {action = "all", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetAll() on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:33.117 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetAll (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:33.117 +05:30 [INF] GetAll tweet API called
+2022-05-19 16:51:33.129 +05:30 [INF] Successfully returned all tweets
+2022-05-19 16:51:33.129 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetAll (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.7317ms.
+2022-05-19 16:51:33.129 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:33.129 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetAll (TweetMe) in 48.8499ms
+2022-05-19 16:51:33.129 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:51:33.130 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json - - 200 - application/json;+charset=utf-8 50.1389ms
+2022-05-19 16:51:34.499 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/njhawar01/like/6286283a5433a538a54e7902 - -
+2022-05-19 16:51:34.499 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:34.500 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/tweet/njhawar01/like/6286283a5433a538a54e7902 - - - 204 - - 0.7110ms
+2022-05-19 16:51:34.507 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:38201/api/v1.0/tweet/njhawar01/like/6286283a5433a538a54e7902 application/json 176
+2022-05-19 16:51:34.507 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:34.507 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:34.507 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:34.507 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.LikeTweet (TweetMe)'
+2022-05-19 16:51:34.510 +05:30 [INF] Route matched with {action = "{Login_Id}/like", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LikeTweet(System.String, TweetMe.Models.Tweet) on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:34.547 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.LikeTweet (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:34.548 +05:30 [INF] LikeTweet API called
+2022-05-19 16:51:34.559 +05:30 [INF] Successfully liked the tweet
+2022-05-19 16:51:34.559 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.LikeTweet (TweetMe), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 11.9164ms.
+2022-05-19 16:51:34.559 +05:30 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-05-19 16:51:34.559 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.LikeTweet (TweetMe) in 48.83ms
+2022-05-19 16:51:34.559 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.LikeTweet (TweetMe)'
+2022-05-19 16:51:34.559 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:38201/api/v1.0/tweet/njhawar01/like/6286283a5433a538a54e7902 application/json 176 - 204 - - 52.6079ms
+2022-05-19 16:51:34.563 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json -
+2022-05-19 16:51:34.563 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:34.563 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:34.563 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:34.564 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:51:34.564 +05:30 [INF] Route matched with {action = "all", controller = "Tweet"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TweetMe.Models.Tweet]]] GetAll() on controller TweetMe.Controllers.TweetController (TweetMe).
+2022-05-19 16:51:34.595 +05:30 [INF] Executing action method TweetMe.Controllers.TweetController.GetAll (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:34.595 +05:30 [INF] GetAll tweet API called
+2022-05-19 16:51:34.601 +05:30 [INF] Successfully returned all tweets
+2022-05-19 16:51:34.601 +05:30 [INF] Executed action method TweetMe.Controllers.TweetController.GetAll (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.762ms.
+2022-05-19 16:51:34.601 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TweetMe.Models.Tweet, TweetMe, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-05-19 16:51:34.602 +05:30 [INF] Executed action TweetMe.Controllers.TweetController.GetAll (TweetMe) in 38.4984ms
+2022-05-19 16:51:34.602 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.TweetController.GetAll (TweetMe)'
+2022-05-19 16:51:34.603 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:38201/api/v1.0/tweet/all application/json - - 200 - application/json;+charset=utf-8 39.6671ms
+2022-05-19 16:51:35.893 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/logout - -
+2022-05-19 16:51:35.893 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:35.894 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:38201/api/v1.0/user/logout - - - 204 - - 1.0019ms
+2022-05-19 16:51:35.896 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:38201/api/v1.0/user/logout application/json 149
+2022-05-19 16:51:35.897 +05:30 [INF] CORS policy execution successful.
+2022-05-19 16:51:35.897 +05:30 [INF] Successfully validated the token.
+2022-05-19 16:51:35.897 +05:30 [INF] Authorization was successful.
+2022-05-19 16:51:35.897 +05:30 [INF] Executing endpoint 'TweetMe.Controllers.UserController.Logout (TweetMe)'
+2022-05-19 16:51:35.897 +05:30 [INF] Route matched with {action = "logout", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout(TweetMe.Models.User) on controller TweetMe.Controllers.UserController (TweetMe).
+2022-05-19 16:51:35.925 +05:30 [INF] Executing action method TweetMe.Controllers.UserController.Logout (TweetMe) - Validation state: "Valid"
+2022-05-19 16:51:35.925 +05:30 [INF] Logout API called
+2022-05-19 16:51:35.948 +05:30 [INF] User successfully logged out
+2022-05-19 16:51:35.948 +05:30 [INF] Executed action method TweetMe.Controllers.UserController.Logout (TweetMe), returned result Microsoft.AspNetCore.Mvc.OkResult in 22.6531ms.
+2022-05-19 16:51:35.948 +05:30 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-05-19 16:51:35.948 +05:30 [INF] Executed action TweetMe.Controllers.UserController.Logout (TweetMe) in 50.9188ms
+2022-05-19 16:51:35.948 +05:30 [INF] Executed endpoint 'TweetMe.Controllers.UserController.Logout (TweetMe)'
+2022-05-19 16:51:35.949 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:38201/api/v1.0/user/logout application/json 149 - 200 - - 52.8754ms

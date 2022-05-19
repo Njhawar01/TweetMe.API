@@ -1,12 +1,11 @@
 ﻿using Confluent.Kafka;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
-using System.Text.Json;
 using System.Threading.Tasks;
 using TweetMe.Models;
 using TweetMe.Services;
@@ -21,10 +20,12 @@ namespace TweetMe.Controllers
         private readonly TweetService _tweetService;
         private readonly string bootstrapServers = "localhost:9092";
         private readonly string topic = "tweet";
+        private readonly ILogger<TweetController> _logger;
 
-        public TweetController(TweetService tweetService)
+        public TweetController(TweetService tweetService, ILogger<TweetController> logger)
         {
             _tweetService = tweetService;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -33,12 +34,14 @@ namespace TweetMe.Controllers
         {
             try
             {
+                _logger.LogInformation("GetAll tweet API called");
                 var user = await _tweetService.GetAllTweet();
+                _logger.LogInformation("Successfully returned all tweets");
                 return Ok(user);
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                _logger.LogError("GetAll tweet API exception: {0}", ex);
                 return StatusCode(500);
             }
         }
@@ -49,18 +52,21 @@ namespace TweetMe.Controllers
         {
             try
             {
+                _logger.LogInformation("GetByUsername API called");
                 var tweet = await _tweetService.GetByUsernameAsync(Login_Id);
 
                 if (tweet == null)
                 {
+                    _logger.LogInformation("GetByUsername API: Tweet not found");
                     return NotFound();
                 }
 
+                _logger.LogInformation("Successfully returned tweets for given user {0}", Login_Id);
                 return tweet;
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                _logger.LogError("GetByUsername API exception: {0}", ex);
                 return StatusCode(500);
             }
         }
@@ -71,15 +77,16 @@ namespace TweetMe.Controllers
         {
             try
             {
+                _logger.LogInformation("CreateTweet API called");
                 await _tweetService.CreateTweetAsync(tweet);
-                return Ok(tweet);
 
-                //string message = JsonSerializer.Serialize(tweet);
-                //return Ok(await SendOrderRequest(topic, message));
+                _logger.LogInformation("Successfully created new tweet");
+
+                return Ok(tweet);
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                _logger.LogError("CreateTweet API exception: {0}", ex);
                 return StatusCode(500);
             }
         }
@@ -90,17 +97,22 @@ namespace TweetMe.Controllers
         {
             try
             {
+                _logger.LogInformation("UpdateTweet API called");
                 var queriedTweet = await _tweetService.GetByIdAsync(updatedTweet.Id);
                 if (queriedTweet == null)
                 {
+                    _logger.LogInformation("UpdateTweet API: Tweet not found");
                     return NotFound();
                 }
                 await _tweetService.UpdateTweetAsync(updatedTweet.Id, updatedTweet);
+
+                _logger.LogInformation("Successfully updated the tweet");
+
                 return NoContent();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                _logger.LogError("UpdateTweet API exception: {0}", ex);
                 return StatusCode(500);
             }
         }
@@ -111,17 +123,22 @@ namespace TweetMe.Controllers
         {
             try
             {
+                _logger.LogInformation("DeleteTweet API called");
                 var tweet = await _tweetService.GetByIdAsync(id);
                 if (tweet == null)
                 {
+                    _logger.LogInformation("DeleteTweet API: Tweet not found");
                     return NotFound();
                 }
                 await _tweetService.DeleteTweetAsync(id);
+
+                _logger.LogInformation("Successfully deleted the tweet");
+
                 return NoContent();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                _logger.LogError("DeleteTweet API exception: {0}", ex);
                 return StatusCode(500);
             }
         }
@@ -132,17 +149,22 @@ namespace TweetMe.Controllers
         {
             try
             {
+                _logger.LogInformation("LikeTweet API called");
                 var queriedTweet = await _tweetService.GetByIdAsync(id);
                 if (queriedTweet == null)
                 {
+                    _logger.LogInformation("LikeTweet API: Tweet not found");
                     return NotFound();
                 }
                 await _tweetService.LikeTweetAsync(id, updatedTweet, queriedTweet);
+
+                _logger.LogInformation("Successfully liked the tweet");
+
                 return NoContent();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                _logger.LogError("LikeTweet API exception: {0}", ex);
                 return StatusCode(500);
             }
         }
@@ -153,25 +175,30 @@ namespace TweetMe.Controllers
         {
             try
             {
+                _logger.LogInformation("ReplyTweet API called");
                 var oldTweet = await _tweetService.GetByIdAsync(id);
                 if (oldTweet == null)
                 {
+                    _logger.LogInformation("ReplyTweet API: Tweet not found");
                     return NotFound();
                 }
 
                 await _tweetService.ReplyTweetAsync(id, oldTweet, tweet);
+
+                _logger.LogInformation("Successfully added reply to the tweet");
+
                 return NoContent();
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                _logger.LogError("ReplyTweet API exception: {0}", ex);
                 return StatusCode(500);
             }
         }
 
         private async Task<bool> SendOrderRequest(string topic, string message)
         {
-            ProducerConfig config = new ProducerConfig
+            ProducerConfig config = new()
             {
                 BootstrapServers = bootstrapServers,
                 ClientId = Dns.GetHostName()

@@ -72,3 +72,13 @@ C:\Users\User\source\repos\Accrediation\TweetMe\obj\Debug\net5.0\TweetMe.dll
 C:\Users\User\source\repos\Accrediation\TweetMe\obj\Debug\net5.0\ref\TweetMe.dll
 C:\Users\User\source\repos\Accrediation\TweetMe\obj\Debug\net5.0\TweetMe.pdb
 C:\Users\User\source\repos\Accrediation\TweetMe\obj\Debug\net5.0\TweetMe.genruntimeconfig.cache
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Serilog.dll
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Serilog.AspNetCore.dll
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+C:\Users\User\source\repos\Accrediation\TweetMe\bin\Debug\net5.0\Serilog.Sinks.File.dll
